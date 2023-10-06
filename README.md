@@ -53,9 +53,13 @@ The server returns the following values in response
 
 • Operator registration request
 To register a new operator, we must first send the operator information to the /api/operation/new_user/ address as shown in the picture below.
+
 <img width="366" alt="Screenshot 2023-10-06 at 1 48 21 PM" src="https://github.com/SeyedMohammadAminAltolie-Dev/Safkari/assets/33419682/2e24d9a3-71cc-4535-b1d8-af8fe3f1589e">
+
 The server also includes the following values in the response.
+
 <img width="360" alt="Screenshot 2023-10-06 at 1 48 59 PM" src="https://github.com/SeyedMohammadAminAltolie-Dev/Safkari/assets/33419682/a1cef754-6fde-40d7-b2dc-9f0c3f9c614e">
+
 • Operator login
 So far we have looked at requests that anyone can create, (registration), but from here on requests are only for logged-in users. To login and authenticate the user, we use Djano oauth 2.0 We did it, it is currently used for Instagram, Facebook, etc.
 The first step is to log in as an administrator, and for that we must have a super user, and we must be in the project terminal.
