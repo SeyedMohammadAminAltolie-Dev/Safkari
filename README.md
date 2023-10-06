@@ -17,6 +17,7 @@ Company application Our application is for entering the information of the compa
 The db.sqlite3 file is our database. At the moment, because we are in the development phase, we use it as Django's default mode.
 The Operation application is related to operators' information and how to register them. The car_information application is related to the information of cars and their owners.
 The repair_request application is related to smoothing and painting request information and other information including payments and photo albums, additional accessories, and repair items.
+
 <img width="205" alt="Screenshot 2023-10-06 at 1 36 43 PM" src="https://github.com/SeyedMohammadAminAltolie-Dev/Safkari/assets/33419682/4a7d95d5-2c52-4a49-9850-7d00f054555a">
 
 Types of requests in the project
@@ -25,19 +26,31 @@ In this section, we examine the types of requests and how to create them. In thi
 • Request to create a company To create a new company
 we must apply to the address below and provide the necessary information for registration
 api/company/new_company/
+
 <img width="479" alt="Screenshot 2023-10-06 at 1 39 49 PM" src="https://github.com/SeyedMohammadAminAltolie-Dev/Safkari/assets/33419682/94a84404-46ac-41ba-bf31-e5bdb21de478">
+
 In response, the server returns the following information.
+
 <img width="394" alt="Screenshot 2023-10-06 at 1 40 15 PM" src="https://github.com/SeyedMohammadAminAltolie-Dev/Safkari/assets/33419682/76f35ed4-e95f-4285-8791-d6ea81a0907f">
+
 • Company branch registration request
 To register the company branch, we send the information in the following format to the address /api/company/new_branch, please note that instead of the company value, we must put the registered company ID.
+
 <img width="477" alt="Screenshot 2023-10-06 at 1 41 39 PM" src="https://github.com/SeyedMohammadAminAltolie-Dev/Safkari/assets/33419682/9f67a7c3-2e80-4de9-ad39-2915df72da6a">
+
 The server returns the following values in response.
+
 <img width="347" alt="Screenshot 2023-10-06 at 1 42 10 PM" src="https://github.com/SeyedMohammadAminAltolie-Dev/Safkari/assets/33419682/5940d2dc-fe32-4d66-9ec8-acb32e058f55">
+
 • New worker registration request
 To request the registration of a new worker, we must send the worker's information to the /api/company/new_worker/ address, as shown in the images below. The value of branch is the ID of the branch where the worker works.
+
 <img width="410" alt="Screenshot 2023-10-06 at 1 47 08 PM" src="https://github.com/SeyedMohammadAminAltolie-Dev/Safkari/assets/33419682/9c48a764-da18-4613-ae1f-961217feb7dd">
+
 The server returns the following values in response
+
 <img width="303" alt="Screenshot 2023-10-06 at 1 47 39 PM" src="https://github.com/SeyedMohammadAminAltolie-Dev/Safkari/assets/33419682/ea2b9d89-5223-4ff1-a8d2-2ca7c261a028">
+
 • Operator registration request
 To register a new operator, we must first send the operator information to the /api/operation/new_user/ address as shown in the picture below.
 <img width="366" alt="Screenshot 2023-10-06 at 1 48 21 PM" src="https://github.com/SeyedMohammadAminAltolie-Dev/Safkari/assets/33419682/2e24d9a3-71cc-4535-b1d8-af8fe3f1589e">
